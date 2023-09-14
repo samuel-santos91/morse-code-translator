@@ -30,3 +30,6 @@ export const MorseCodeToText = (e) => {
 
 textInput.addEventListener("input", TextToMorseCode);
 morseCodeInput.addEventListener("input", MorseCodeToText);
+
+
+document.querySelector()
