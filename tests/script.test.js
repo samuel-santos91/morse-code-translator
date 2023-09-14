@@ -1,13 +1,26 @@
 import { TextToMorseCode, MorseCodeToText } from "../src/js/script.js";
 
 describe("TextToMorseCode() tests", () => {
-  // it("Should throw an error if non-letter/number characters are typed into the input", () => {});
+  it("Should throw an error if non-letter/number characters are typed into the input", () => {
+    expect(() => {
+      e.target.value = "hello!";
+    }).toThrow(new Error("Your text can only contain letters or numbers"));
+    expect(() => {
+      e.target.value = "hello, are you ok?";
+    }).toThrow(new Error("Your text can only contain letters or numbers"));
+    expect(() => {
+      e.target.value = "S.O.S.";
+    }).toThrow(new Error("Your text can only contain letters or numbers"));
+    expect(() => {
+      e.target.value = "!@#$%^";
+    }).toThrow(new Error("Your text can only contain letters or numbers"));
+  });
 
   it("Should be able to handle uppercase and lowercase characters", () => {
-    expect(TextToMorseCode("hello")).toBe(".... . .-.. .-.. --- ");
-    expect(TextToMorseCode("hElLo")).toBe(".... . .-.. .-.. --- ");
-    expect(TextToMorseCode("HEllo")).toBe(".... . .-.. .-.. --- ");
-    expect(TextToMorseCode("HELLO")).toBe(".... . .-.. .-.. --- ");
+    expect(TextToMorseCode("hello")).toBe(".... . .-.. .-.. ---");
+    expect(TextToMorseCode("hElLo")).toBe(".... . .-.. .-.. ---");
+    expect(TextToMorseCode("HEllo")).toBe(".... . .-.. .-.. ---");
+    expect(TextToMorseCode("HELLO")).toBe(".... . .-.. .-.. ---");
   });
 
   it("Should transform any text string into morse code", () => {
@@ -24,8 +37,40 @@ describe("TextToMorseCode() tests", () => {
   });
 });
 
+
 describe("MorseCodeToText() tests", () => {
-  // it("Should throw an error if any group of characters contain other types beyond the following: '.' or '-' ", () => {});
+  it("Should throw an error if any group of characters contain other types beyond the following: '.', '-' or '/' ", () => {
+    expect(() => {
+      e.target.value = ".... . .-.. .-.. --_";
+    }).toThrow(new Error("Your morse code can only contain '.', '-' or '/'"));
+    expect(() => {
+      e.target.value = ".... . ._.. ._.. ___";
+    }).toThrow(new Error("Your morse code can only contain '.', '-' or '/'"));
+    expect(() => {
+      e.target.value = ".... , .-.. .-.. ---";
+    }).toThrow(new Error("Your morse code can only contain '.', '-' or '/'"));
+    expect(() => {
+      e.target.value = "hello";
+    }).toThrow(new Error("Your morse code can only contain '.', '-' or '/'"));
+  });
+
+  it("Should throw an error if a block of morse code characters does not correspond a letter or number", () => {
+    expect(() => {
+      e.target.value = "......";
+    }).toThrow(new Error("Does not correspond to a letter, word or number"));
+    expect(() => {
+      e.target.value = "./";
+    }).toThrow(new Error("Does not correspond to a letter, word or number"));
+    expect(() => {
+      e.target.value = "./.";
+    }).toThrow(new Error("Does not correspond to a letter, word or number"));
+    expect(() => {
+      e.target.value = "...s";
+    }).toThrow(new Error("Does not correspond to a letter, word or number"));
+    expect(() => {
+      e.target.value = "..  ..";
+    }).toThrow(new Error("Does not correspond to a letter, word or number"));
+  });
 
   it("Should handle spaces between characters with a ' ' separator", () => {
     expect(TextToMorseCode(".")).toBe("e");
