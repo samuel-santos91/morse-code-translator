@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <script type="module" src="./js/script.js" defer></script>
+    <title>Morse Code Translator</title>
+  </head>
+  <body>
+    <main>
+      <h2>Morse Code Translator</h2>
+      <section class="main-section">
+        <div class="main-section__text">
+          <label class="main-section__text--title" for="text">Text</label>
+          <textarea
+            class="main-section__text--input"
+            name="text"
+            id="text"
+            cols="30"
+            rows="10"
+            placeholder="Write in text..."
+          ></textarea>
+        </div>
+        <div class="main-section__img">
+          <img
+            class="main-section__img--sorting-arrows"
+            src="./assets/images/sorting-arrows.png"
+            alt="sorting arrows"
+          />
+        </div>
+        <div class="main-section__morse-code">
+          <label class="main-section__morse-code--title" for="morse"
+            >Morse Code</label
+          >
+          <textarea
+            class="main-section__morse-code--input"
+            name="morse"
+            id="morse"
+            cols="30"
+            rows="10"
+            placeholder="Write in morse code..."
+          ></textarea>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
