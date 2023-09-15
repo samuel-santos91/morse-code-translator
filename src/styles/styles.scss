@@ -29,6 +29,7 @@ body {
         margin: 1rem;
 
         &--title {
+          margin-bottom: .5rem;
           font-size: 1.3rem;
         }
         &--input {
@@ -39,6 +40,7 @@ body {
           max-height: 12rem;
           border: 2px solid rgb(117, 230, 218);
           border-radius: 5px;
+          box-shadow: 5px 5px 10px black;
           background-color: rgb(212, 241, 244);
         }
       }
