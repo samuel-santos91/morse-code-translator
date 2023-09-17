@@ -29,6 +29,18 @@ body main .main-section__text, body main .main-section__morse-code {
 body main .main-section__text--title, body main .main-section__morse-code--title {
   margin-bottom: 0.5rem;
   font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+}
+body main .main-section__text--title img, body main .main-section__morse-code--title img {
+  margin-left: 0.5rem;
+  width: 1.4rem;
+  border-radius: 50%;
+}
+body main .main-section__text--title img:hover, body main .main-section__morse-code--title img:hover {
+  cursor: pointer;
+  box-shadow: 2px 2px 5px black;
+  transform: scale(1.1);
 }
 body main .main-section__text--input, body main .main-section__morse-code--input {
   padding: 0.5rem;

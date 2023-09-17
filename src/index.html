@@ -11,6 +11,7 @@
     />
     <link rel="stylesheet" href="./styles/styles.css" />
     <script type="module" src="./js/script.js" defer></script>
+    <script src="./js/api.js" defer></script>
     <title>Morse Code Translator</title>
   </head>
   <body>
@@ -36,9 +37,12 @@
           />
         </div>
         <div class="main-section__morse-code">
-          <label class="main-section__morse-code--title" for="morse"
-            >Morse Code</label
-          >
+          <div class="main-section__morse-code--title">
+            <label for="morse">Morse Code</label>
+            <img id="play" src="./assets/icons/play.png" alt="play icon" />
+            <audio id="audioFile" src=""></audio>
+          </div>
+
           <textarea
             class="main-section__morse-code--input"
             name="morse"
@@ -57,7 +61,10 @@
             src="./assets/icons/error.png"
             alt="error icon"
           />
-          <p class="error-handling-section__block--message" id="errorMessage"></p>
+          <p
+            class="error-handling-section__block--message"
+            id="errorMessage"
+          ></p>
         </div>
       </section>
     </main>

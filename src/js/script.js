@@ -35,3 +35,5 @@ morseCodeInput.addEventListener("input", (e) => {
     textInput.value = "";
   }
 });
+
+

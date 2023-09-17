@@ -31,6 +31,19 @@ body {
         &--title {
           margin-bottom: 0.5rem;
           font-size: 1.3rem;
+          display: flex;
+          align-items: center;
+
+          img {
+            margin-left: .5rem;
+            width: 1.4rem;
+            border-radius: 50%;
+            &:hover {
+              cursor: pointer;
+              box-shadow: 2px 2px 5px black;
+              transform: scale(1.1);
+            }
+          }
         }
         &--input {
           padding: 0.5rem;
