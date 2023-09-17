@@ -15,8 +15,7 @@ export const TextToMorseCode = (text) => {
   
   export const MorseCodeToText = (code) => {
     if (code.match(/[^.\-\/\s]/)) {
-      // textInput.value = "";
-      throw new Error("Your morse code can only contain '.', '-' or '/'");
+      throw new Error("Your morse code can only contain dot ( . ) , dash ( - ) or slash ( / )");
     }
     const typedMorseCode = code.split(" ");
     typedMorseCode.includes("") ? typedMorseCode.pop() : typedMorseCode;
@@ -28,7 +27,6 @@ export const TextToMorseCode = (text) => {
           text.push(key.toLowerCase());
           break;
         } else if (!Object.values(morseCodeMap).includes(block)) {
-          // textInput.value = "";
           throw new Error("The space between characters is irregular");
         }
       }

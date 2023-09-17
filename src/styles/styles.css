@@ -11,7 +11,7 @@ body main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 8rem;
+  margin-bottom: 2rem;
 }
 body main h2 {
   font-size: 3rem;
@@ -36,11 +36,35 @@ body main .main-section__text--input, body main .main-section__morse-code--input
   max-width: 27rem;
   min-height: 12rem;
   max-height: 12rem;
-  border: 2px solid rgb(117, 230, 218);
+  border: 3px solid rgb(117, 230, 218);
   border-radius: 5px;
   box-shadow: 5px 5px 10px black;
   background-color: rgb(212, 241, 244);
 }
 body main .main-section__img--sorting-arrows {
   width: 3rem;
+}
+body main .error-handling-section {
+  margin: 4rem;
+  color: rgb(249, 84, 84);
+  height: 4.5rem;
+}
+body main .error-handling-section__block {
+  display: none;
+  align-items: center;
+  width: 15rem;
+  border: 3px solid rgb(249, 84, 84);
+  border-radius: 10px;
+  padding: 1rem 1.5rem;
+  background-color: rgb(249, 249, 249);
+}
+body main .error-handling-section__block--image {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 0.5rem;
+}
+body main .error-handling-section__block--message {
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: bold;
 }

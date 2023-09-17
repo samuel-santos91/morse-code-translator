@@ -41,16 +41,16 @@ describe("MorseCodeToText() tests", () => {
   it("Should throw an error if any group of characters contain other types beyond the following: '.', '-' or '/' ", () => {
     expect(() => {
       MorseCodeToText(".... . .-.. .-.. --_");
-    }).toThrow(new Error("Your morse code can only contain '.', '-' or '/'"));
+    }).toThrow(new Error("Your morse code can only contain dot ( . ) , dash ( - ) or slash ( / )"));
     expect(() => {
       MorseCodeToText(".... . ._.. ._.. ___");
-    }).toThrow(new Error("Your morse code can only contain '.', '-' or '/'"));
+    }).toThrow(new Error("Your morse code can only contain dot ( . ) , dash ( - ) or slash ( / )"));
     expect(() => {
       MorseCodeToText(".... , .-.. .-.. ---");
-    }).toThrow(new Error("Your morse code can only contain '.', '-' or '/'"));
+    }).toThrow(new Error("Your morse code can only contain dot ( . ) , dash ( - ) or slash ( / )"));
     expect(() => {
       MorseCodeToText("hello");
-    }).toThrow(new Error("Your morse code can only contain '.', '-' or '/'"));
+    }).toThrow(new Error("Your morse code can only contain dot ( . ) , dash ( - ) or slash ( / )"));
   });
 
   it("Should throw an error if a block of morse code characters does not correspond a letter or number", () => {
