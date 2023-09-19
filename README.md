@@ -15,6 +15,9 @@ This app translates text into morse code and vice-versa.
 ## Fetch API
 The app uses an API to translate morse code into audio.<br><br>
 
+## Testing
+There is a folder that contain all the tests for the translation functions in the code. Install the npm packages ("npm install") and run the tests ("npm run test").<br><br>
+
 ## Preview
 
 ### Main 
