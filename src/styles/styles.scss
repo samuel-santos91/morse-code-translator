@@ -1,0 +1,94 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(5, 68, 94);
+  color: rgb(117, 230, 218);
+  font-family: "Dosis", sans-serif;
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+
+    h2 {
+      font-size: 3rem;
+      margin-bottom: 5rem;
+    }
+
+    .main-section {
+      display: flex;
+      align-items: center;
+
+      &__text,
+      &__morse-code {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+
+        &--title {
+          margin-bottom: 0.5rem;
+          font-size: 1.3rem;
+          display: flex;
+          align-items: center;
+
+          img {
+            margin-left: .5rem;
+            width: 1.4rem;
+            border-radius: 50%;
+            &:hover {
+              cursor: pointer;
+              box-shadow: 2px 2px 5px black;
+              transform: scale(1.1);
+            }
+          }
+        }
+        &--input {
+          padding: 0.5rem;
+          min-width: 27rem;
+          max-width: 27rem;
+          min-height: 12rem;
+          max-height: 12rem;
+          border: 3px solid rgb(117, 230, 218);
+          border-radius: 5px;
+          box-shadow: 5px 5px 10px black;
+          background-color: rgb(212, 241, 244);
+        }
+      }
+      &__img {
+        &--sorting-arrows {
+          width: 3rem;
+        }
+      }
+    }
+
+    .error-handling-section {
+      margin: 4rem;
+      color: rgb(249, 84, 84);
+      height: 4.5rem;
+
+      &__block {
+        display: none;
+        align-items: center;
+        width: 15rem;
+        border: 3px solid rgb(249, 84, 84);
+        border-radius: 10px;
+        padding: 1rem 1.5rem;
+        background-color: rgb(249, 249, 249);
+
+        &--image {
+          width: 2rem;
+          height: 2rem;
+          margin-right: .5rem;
+        }
+        &--message {
+          text-align: center;
+          font-size: 1.1rem;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
