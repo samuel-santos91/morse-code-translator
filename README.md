@@ -15,8 +15,28 @@ This app translates text into morse code and vice-versa.
 ## Fetch API
 The app uses an API to translate morse code into audio.<br><br>
 
-## Testing
-There is a folder that contain all the tests for the translation functions in the code. Install the npm packages ("npm install") and run the tests ("npm run test").<br><br>
+## Running Tests
+To execute tests, ensure you have <strong>Node.js</strong> installed. Then, run the 
+following commands:
+### Install Dependencies
+```bash
+npm install
+```
+### Run Tests
+```bash
+npm run test
+```
+The tests cover the following functionality:
+
+### TextToMorseCode() function
+* Validates input: Checks if non-letter/number characters are present.
+* Handles uppercase and lowercase characters.
+* Transforms text strings into Morse code.
+### MorseCodeToText() function
+* Ensures the input only contains valid Morse code characters.
+* Handles spaces between characters and words in Morse code.
+* Converts Morse code strings into text.
+<br><br>
 
 ## Preview
 
@@ -30,3 +50,8 @@ There is a folder that contain all the tests for the translation functions in th
 
 ### Audio Button
 <img width="500" alt="Screenshot 2023-09-17 at 20 46 03" src="https://github.com/samuel-santos91/morse-code-translator/assets/107240729/aee9ad80-cbe5-4b7f-b787-8e484c48be8b">
+
+## Package Information
+
+* Jest Version: 29.7.0
+* Babel Version: 7.22.17
