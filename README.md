@@ -28,7 +28,7 @@ This app was built with the purpose of practicing unit tests with <strong>Jest</
 * The error section displays the error messages linked to wrong characters or irregular spaces between them.
 ### Tech Stack
 * JavaScript
-* Sass
+* CSS
 
 ## Fetch API
 The app uses an API to translate morse code into audio.<br><br>
