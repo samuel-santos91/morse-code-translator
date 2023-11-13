@@ -25,7 +25,10 @@ This app was built with the purpose of practicing unit tests with <strong>Jest</
 * For the text input, whenever the user types into it, the text is translated and displayed on the morse code input. Same for the other way around.
 ### Features
 * Next to the morse code input, there is a button that plays the morse code audio;
-* The error section displays the error messages linked to wrong characters or irregular spaces between them. <br><br>
+* The error section displays the error messages linked to wrong characters or irregular spaces between them.
+### Tech Stack
+* JavaScript
+* Sass
 
 ## Fetch API
 The app uses an API to translate morse code into audio.<br><br>
