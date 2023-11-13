@@ -2,6 +2,11 @@
 
 ## Description 
 This app translates text into morse code and vice-versa.
+### Purpose
+This app was built with the purpose of practicing unit tests with <strong>Jest</strong>.
+### Tech Stack
+* JavaScript
+* CSS
 
 ## Preview
 ### Main 
@@ -16,8 +21,6 @@ This app translates text into morse code and vice-versa.
 <img width="500" alt="Screenshot 2023-09-17 at 20 46 03" src="https://github.com/samuel-santos91/morse-code-translator/assets/107240729/aee9ad80-cbe5-4b7f-b787-8e484c48be8b">
 
 ## About
-### Purpose
-This app was built with the purpose of practicing unit tests with <strong>Jest</strong>.
 ### Sections
 * There are two different sections in this webpage:
   * Text and morse code inputs;
@@ -26,9 +29,6 @@ This app was built with the purpose of practicing unit tests with <strong>Jest</
 ### Features
 * Next to the morse code input, there is a button that plays the morse code audio;
 * The error section displays the error messages linked to wrong characters or irregular spaces between them.
-### Tech Stack
-* JavaScript
-* CSS
 
 ## Fetch API
 The app uses an API to translate morse code into audio.<br><br>
